@@ -1,0 +1,717 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------------------------- HEADER SECTION ----------------------------- */
+.darkHeader {
+    background-color: rgba(34, 34, 34, 0.9);
+    transition: 1s;
+}
+
+.header-top {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.header-top .row {
+    display: flex;
+    padding-top: 10px;
+}
+
+.header-top-left,
+.logo-left {
+    text-align: left;
+}
+
+.header-top-right,
+.header-right {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-top a {
+    color: #fff;
+}
+
+.header-top ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.header-top ul li a:hover,
+.nav-menu a:hover {
+    color: #c6b069;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.main-menu {
+    padding-top: 20px;
+    border-top: 1px solid #39353e;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-menu>li {
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-menu a {
+    padding: 0 8px 0 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+/*----------------------------- BANNER SECTION ----------------------------- */
+.banner-area {
+    background-image: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(../imgs/banner-bg.jpg);
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+    background-color: transparent !important;
+}
+
+.full-screen {
+    height: 100vh;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.banner-content p {
+    font-size: 14px;
+}
+
+.banner-btn,
+.request-btn {
+    background-color: #c6b069;
+    border-radius: 0;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.banner-btn:hover,
+.request-btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+/*----------------------------- SERVICE SECTION ----------------------------- */
+.service-card {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.service-area {
+    padding: 120px 0;
+}
+
+.service-area h1,
+.gallery-area h1,
+.blog-area h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2c2b2b;
+}
+
+.service-area p {
+    color: #747474;
+    font-size: 14px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.design {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all .5s ease;
+}
+
+.design h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.design p {
+    color: #5c5c5c;
+    font-weight: 300;
+}
+
+.design:hover,
+.single-feature:hover {
+    background-color: #04091E;
+}
+
+.design:hover h4,
+.feature-card:hover h4,
+.feature-card:hover i {
+    color: #c6b069;
+}
+
+/*----------------------------- GALLERY SECTION ----------------------------- */
+.gallery-col {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.single-gallery {
+    margin-bottom: 30px;
+}
+
+.content {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-details {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-title {
+    border-bottom: 1px solid #c6b069;
+    width: 60%;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.gallery-btn {
+    background-color: #c6b069;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.content:hover .content-overlay {
+    opacity: .8;
+}
+
+.content-overlay {
+    background-color: #373642;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    border: 1px solid #c6b069;
+    margin: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.gallery {
+    margin-bottom: 30px;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+/*----------------------------- FEATURE SECTION ----------------------------- */
+.feature-area {
+    background-color: #c6b069;
+    padding: 120px 0;
+}
+
+.feature-area h1,
+.request-area h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.title span {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.title h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.feature-card p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+}
+
+.feature-card {
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.single-feature {
+    background: #fff;
+    padding: 32px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: all .5s ease;
+}
+
+/*----------------------------- TESTIMONIAL SECTION ----------------------------- */
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.testimonial-title h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testimonial-title p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+}
+
+/* owl carousel */
+.item {
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+    padding: 25px;
+}
+
+.item p {
+    color: #777;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.item h4 {
+    font-size: 20px;
+    color: #2e2e2e;
+    transition: .5s ease;
+}
+
+.user1 {
+    width: 50px !important;
+}
+
+.owl-img {
+    margin-right: 35px;
+    font-weight: 300;
+}
+
+.star .full {
+    color: #c6b069;
+    font-size: 14px;
+}
+
+.star .blank {
+    color: #777;
+    font-size: 14px;
+}
+
+.item:hover h4 {
+    color: #c6b069;
+}
+
+
+/*----------------------------- REQUEST SECTION ----------------------------- */
+.pt-120 {
+    padding-top: 120px;
+}
+
+.req-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/call-action-bg.jpg) center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.req-img p {
+    max-width: 630px;
+    font-weight: 300;
+}
+
+/*----------------------------- BLOG SECTION ----------------------------- */
+.blog-area p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #222;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+/* owl carousel */
+.card {
+    border: 0;
+    padding: 30px;
+}
+
+.blog-btn {
+    border: 1px solid #dddddd;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222;
+    border-radius: 0;
+    transition: all .3s ease;
+}
+
+.blog-btn:hover {
+    border: 1px solid #dddddd;
+    background-color: #c6b069;
+    color: #fff;
+}
+
+.blog-btn-div {
+    margin: 20px 0;
+}
+
+.blog-content h4 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.blog-content h6 {
+    color: #222;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*----------------------------- BRANDS SECTION ----------------------------- */
+.brands-area {
+    padding: 60px 0;
+}
+.pb-25{
+    padding-bottom: 50px;
+    /* margin: auto; */
+}
+
+/*----------------------------- FOOTER SECTION ----------------------------- */
+.footer-area h6 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer-area p {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+}
+
+.footer-text i {
+    color: #c6b069;
+    font-size: 16px;
+}
+
+.footer-text span {
+    color: #c6b069;
+}
+
+.footer-area p.about {
+    max-width: 450px;
+}
+
+.footer-btn {
+    background-color: #c6b069;
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+}
+
+.email {
+    border: 0;
+    outline: 0;
+}
+
+.footer-social a {
+    padding-right: 25px;
+    font-size: 14px;
+    color: #c4c4c4;
+    transition: all .3s ease;
+}
+
+.footer-social a:hover {
+    color: #c6b069;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    /* BANNER AREA */
+    .banner-content h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .banner-content p {
+        font-size: 12px;
+    }
+
+    /* SERVICE AREA */
+    .col-lg-4.service-card {
+        padding: 15px 0;
+    }
+    .col-lg-4.service-card {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .service-area h1,
+    .gallery-area h1,
+    .blog-area h1 {
+        font-size: 25px;
+        font-weight: 600;
+        color: #2c2b2b;
+    }
+
+    /* TESTIMONIAL AREA */
+    .testimonial-title h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    /* FEATURE AREA */
+    .feature-area h1,
+    .request-area h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    /* BRANDS AREA */
+    .col-lg-2.col-md-4.mx-auto {
+        /* padding-bottom: 55px; */
+    }
+
+    /* BLOG SECTION */
+    .blog-img {
+        margin: auto;
+    }
+
+    .blog-btn-div {
+        text-align: center;
+    }
+
+    .blog-content {
+        text-align: center;
+    }
+
+    /* navbar */
+    div#navbarSupportedContent {
+        background: black;
+        height: 100vh;
+        position: absolute;
+        top: -20px;
+        padding: 0 280px;
+        right: 320px;
+        padding-top: 30px;
+    }
+
+    button.navbar-toggler {
+        margin: 0px -50px;
+    }
+
+    button.navbar-toggler {
+        position: absolute;
+    }
+
+    button.navbar-toggler.collapsed {
+        margin: 0px -50px;
+    }
+
+    .header-top.p-0 {
+        display: none;
+    }
+
+    li.nav-item {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-top {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        color: #fff !important;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+    }
+
+    /* BLOG SECTION */
+    .blog-img {
+        margin: auto;
+    }
+
+    .blog-btn-div {
+        text-align: center;
+    }
+
+    .blog-content {
+        text-align: center;
+    }
+
+    /* bootstrap nav */
+
+    button.navbar-toggler {
+        position: absolute;
+        top: 0;
+        left: -41px;
+    }
+
+    div#navbarSupportedContent {
+        top: -20px;
+        padding: 0 114px;
+        right: 343px;
+        padding-top: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* navbar */
+    button.navbar-toggler.collapsed {
+        margin: 0px -50px;
+    }
+
+    div#navbarSupportedContent {
+        top: -20px;
+        padding-left: 270px;
+        right: 95px;
+        padding-left: -1px;
+        padding-top: 30px;
+    }
+    .pb-25 {
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 75px;
+    }
+}
+a.request-btn {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+/* 
+
+<section class="banner-area">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="banner-content">
+                    <h3>
+                        Startup you can build a
+                        website online using the
+                        Bootstrap builder.</h3>
+                    <p class="text-white mt-4 mx-auto">If you are looking at blank cassettes on the web, you may be very
+                        confused at the difference in price. You may see <br> some for as low as $.17 each. You may be
+                        saying to yourself.</p>
+                    <a href="#" class="btn banner-btn mt-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section> */

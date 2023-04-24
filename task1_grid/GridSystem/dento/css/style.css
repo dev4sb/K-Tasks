@@ -1,0 +1,123 @@
+
+.nav-contact{
+    padding: 20px;
+}
+.navbar{
+    padding: 35px;
+}
+.banner{
+    padding: 200px;
+    margin-top: 100px;
+}
+.service{
+    background-color: #292C4F;
+    padding: 60px;
+}
+.title{
+    background-color: rgb(255, 0, 43);
+    padding: 30px;
+}
+.tIcon{
+    background-color: bisque;
+    padding: 60px;
+}
+.book{
+    /* background-color: bisque; */
+    padding: 25px;
+}
+.img{
+    background-color: rgb(255, 255, 255);
+    padding: 198px;
+}
+.price{
+    background-color: rgb(52, 7, 136);
+    padding: 50px;
+}
+.app{
+    background-color: #039e51;
+    padding: 50px;
+}
+.dentist{
+    background-color: #03539e;
+    padding: 50px;
+}
+.team{
+    background-color: #03539e;
+    padding: 180px;
+}
+.review{
+    background-color: #262A4F;
+    padding: 150px;
+}
+.news{
+    background-color: #262A4F;
+    height: 500px;
+}
+
+
+.name{
+    background-color: #00AEEF;
+    padding: 300px;
+}
+.stage{
+    background-color: #00AEEF;
+    height: 100%;
+}
+.rate{
+    background-color: #00AEEF;
+    height: 100%;
+}
+
+.appointment{
+    background-color: #292B4E;
+    height: 100vh;
+}
+.book{
+    height: 40px;
+}
+
+.features{
+    height: 100vh;
+}
+.about{
+    padding: 300px;
+}
+.design-cards{
+    background-color: rgb(18, 158, 201); 
+    padding: 100px;
+}
+.works,
+.work{
+    background-color: rgb(255, 255, 255);
+    padding: 150px;
+}
+.features{
+    background-color: aqua;
+}
+.unique{
+    padding-top: 50px;
+}
+.feature-cards{
+    padding: 100px;
+    background-color: rgb(82, 46, 180);
+}
+.clients{
+    background-color: rgb(226, 43, 58);
+    padding: 100px;
+}
+.quote{
+    background-color: rgb(17, 52, 148);
+    padding: 250px;
+}
+.exhibition{
+    padding: 130px;
+    background-color: rgb(12, 168, 116);
+}
+.icons{
+    padding: 100px;
+    background-color: #00aeef;
+} 
+.footer{
+    padding: 200px;
+    background-color: blueviolet;
+}

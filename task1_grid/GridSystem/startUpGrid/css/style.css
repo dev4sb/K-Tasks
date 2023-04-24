@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+#banner {
+    height: 100vh;
+}
+
+#content1 {
+    height: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#services {
+    height: 250px;
+}
+
+.product,
+.team,
+.owner,
+.footer {
+    height: 350px;
+}
+
+.video,
+.about,
+.form {
+    height: 600px;
+}

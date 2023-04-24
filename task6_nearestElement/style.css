@@ -1,0 +1,43 @@
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #252525;
+    position: absolute;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 7px 8px 1px rgba(1, 1, 1,.5);
+}
+
+.click-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    pointer-events: none;
+    animation: clickEffect 1s forwards;
+}
+
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

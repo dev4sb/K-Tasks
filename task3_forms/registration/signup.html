@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+
+    <!-- jQuery CDN LINK -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FONT AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BOOTSTRAP CSS FILE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CUSTOM JS FILE -->
+    <script src="js/javascript.js"></script>
+
+</head>
+
+<body>
+    <div class="float-end theme bg-dark text-white px-2 py-1 rounded-3"><i class="fa-solid fa-sun"></i></div>
+
+    <div id="container" class="shadow-lg container text-white w-50 m-auto py-1 px-5 rounded-4 mt-2">
+        <h3 class="text-center my-5">CREATE YOUR ACCOUNT</h3>
+
+        <form class="pb-5" id="myForm">
+            <div class="row">
+
+                <div class="mb-3 col-lg-6">
+                    <label class="form-label"><b>First Name</b></label>
+                    <input type="text" class="form-control" id="fname" name="fname">
+                    <!-- <small class="fnamecheck text-danger">Please enter first name</small> -->
+                </div>
+
+                <div class="mb-3 col-lg-6">
+                    <label class="form-label"><b>Last Name</b></label>
+                    <input type="text" class="form-control" id="lname" name="lname">
+                    <!-- <small class="lnamecheck text-danger">Please enter last name</small> -->
+                </div>
+                <div class="mb-3 col-lg-12">
+                    <label class="form-label"><b>Email address</b></label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <div id="emailHelp" class="form-text text-light msg">We'll never share your email with anyone else.
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-6">
+                    <label class="form-label"><b>Password</b></label>
+                    <input type="password" class="form-control" name="password" id="password">
+                    <!-- <small class="passcheck text-danger">Please enter the password</small> -->
+                </div>
+                <div class="mb-3 col-lg-6">
+                    <label class="form-label"><b>Confirm Password</b></label>
+                    <input type="password" class="form-control" name="conpassword" id="conpassword">
+                    <!-- <small class="conpasscheck text-danger">Passwords are not same</small> -->
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><b>Profile image</b></label>
+                    <label id="profile" class="float-end"><i class="fa-solid fa-chevron-down"
+                            onclick="myFunctionImg()"></i></label>
+                    <input type="file" class="form-control" id="pi image" name="image">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><b>Hobbies</b></label> <br>
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" value="Reading"> <label
+                        class="me-4">Reading</label>
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" value="Travelling">
+                    <label class="me-4">Travelling</label>
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" value="Sports"> <label
+                        class="me-4">Sports</label>
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" value="Coding"> <label
+                        class="me-4">Coding</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"><b>Gender</b></label> <br>
+                    <input type="radio" class="form-check-input" name="gender" value="Male"> <label
+                        class="me-4">Male</label>
+                    <input type="radio" class="form-check-input" name="gender" value="Female"> <label
+                        class="me-4">Female</label>
+                </div>
+                <div class="mb-3 gen">
+                    <label class="form-label"><b>Description</b></label>
+                    <label id="profile" class="float-end"><i class="fa-solid fa-chevron-down"
+                            onclick="myFunctionDesc()"></i></label>
+                    <textarea name="desc" id="desc" cols="30" rows="10" class="form-control desc"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label terms">Accept Terms of Services</label>
+                </div>
+                <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+
+                <div class="col-lg-6">
+                    <button onclick="log()" class="btn btn-primary form-control mt-3 bg-info border-0">Reset</button>
+                </div>
+                <div class="col-lg-6">
+                    <button type="submit" class="btn btn-primary form-control mt-3 bg-danger border-0">Cancel</button>
+                </div>
+                <div>
+
+
+
+                    <p class="text-center mt-3">Already have an account? <a href="signin.html" class="signup">Sign
+                            In</a></p>
+                </div>
+        </form>
+    </div>
+
+
+    <!-- Theme day/night -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.theme').click(function () {
+                $('.container').toggleClass("day");
+            });
+        });
+    </script>
+
+    <script>
+        function log() {
+            console.log("Reset Button is being clicked by the user!");
+        }
+    </script>
+
+    
+
+
+    <!-- Validation jQuery script -->
+    <script src="js/validate.js"></script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

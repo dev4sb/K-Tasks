@@ -1,0 +1,42 @@
+form label b{
+    font-weight: 500;
+}
+.msg{
+    color: rgb(143, 143, 143) !important;
+}
+.signup{
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration: underline;
+}
+.desc{
+    max-height: 80px;
+}
+.terms,
+.remember{
+    font-size: 14px;
+}
+#profile{
+    cursor: pointer;
+}
+#pi{
+    display: block;
+}
+#desc{
+    display: block;
+}
+
+#container{
+    background-color: #000;
+    transition: .3s ease-in-out;
+}
+.theme{
+    margin-right: 20%;
+    cursor: pointer;
+}
+.day{
+    background-color: rgb(209, 209, 209) !important;
+    color: #000 !important;
+    transition: .3s ease-in-out;
+}

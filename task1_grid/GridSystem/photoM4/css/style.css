@@ -1,0 +1,104 @@
+
+.nav-contact{
+    padding: 20px;
+}
+.navbar{
+    padding: 45px;
+}
+.banner,
+.features{
+    height: 100vh;
+}
+.inner-banner{
+    padding: 200px;
+    margin-top: 100px;
+}
+.client{
+    padding: 200px;
+}
+.about{
+    background-color: blueviolet;
+    height: 200px;
+}
+.exhibition{
+    height: 500px;
+    background-color: rgb(12, 168, 116);
+}
+.product{
+    background-color: rgb(226, 43, 52);
+    height: 500px;
+}
+.testimonial{
+    background-color: yellowgreen;
+    height: 500px;
+}
+.video{
+    background-color: #0E0E0F;
+    height: 500px;
+}
+.form{
+    background-color: tomato;
+    height: 400px;
+}
+.form1{
+    background-color: rgb(80, 243, 229);
+    height: 400px;
+}
+.map{
+    background-color: #4c94cf;
+    height: 400px;
+}
+.FOOTER{
+    background-color: #767676;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.design-cards{
+    background-color: rgb(18, 158, 201); 
+    padding: 100px;
+}
+.works,
+.work{
+    background-color: rgb(255, 255, 255);
+    padding: 150px;
+}
+.features{
+    background-color: aqua;
+}
+.unique{
+    padding-top: 50px;
+}
+.feature-cards{
+    padding: 100px;
+    background-color: rgb(82, 46, 180);
+}
+.clients{
+    background-color: rgb(226, 43, 58);
+    padding: 100px;
+}
+.quote{
+    background-color: rgb(17, 52, 148);
+    padding: 250px;
+}
+.exhibition{
+    padding: 130px;
+    background-color: rgb(12, 168, 116);
+}
+.premium{
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.footer{
+    padding: 200px;
+    background-color: blueviolet;
+}

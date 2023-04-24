@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Form</title>
+
+    <!-- BOOTSTRAP CSS FILE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container bg-dark text-white w-25 m-auto py-3 px-5 rounded-4 mt-5">
+        <h3 class="text-center my-5">USER SIGN-IN</h3>
+        <form class="pb-5">
+            <div class="mb-3">
+                <label for="username" class="form-label"><b>User Name</b></label>
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="userhelp" placeholder="Enter Username">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"><b>Email address</b></label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label remember" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-primary form-control mt-3">Sign In</button>
+            <p class="text-center mt-3">Do not have an account? <a href="signup.html" class="signup">Sign Up</a></p>
+            <p class="text-center mt-3"><a href="#" class="signup">Forgot Password?</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

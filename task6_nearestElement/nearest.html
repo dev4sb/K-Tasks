@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nearest Div Fetch</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="click-effect">
+
+    <div class="box" style="top: 100px; left: 100px;">1</div>
+    <div class="box" style="top: 500px; left: 200px;">2</div>
+    <div class="box" style="top: 350px; left: 350px;">3</div>
+    <div class="box" style="top: 600px; left: 500px;">4</div>
+    <div class="box" style="top: 200px; left: 650px;">5</div>
+    <div class="box" style="top: 400px; left: 800px;">6</div>
+    <div class="box" style="top: 250px; left: 950px;">7</div>
+    <div class="box" style="top: 550px; left: 1100px;">8</div>
+    <div class="box" style="top: 70px; left: 1250px;">9</div>
+    <div class="box" style="top: 200px; left: 1400px;">10</div>
+</div>
+
+    <script>
+
+        $(document).on('click', function (event) {
+            var mouseX = event.clientX; 
+            var mouseY = event.clientY;
+            var nearestElement = null;
+            var shortestDistance = Infinity;
+
+            $('.box').each(function () {
+
+                var $element = $(this);
+
+                var elementX = $element.offset().left + ($element.outerWidth() / 2);
+                var elementY = $element.offset().top + ($element.outerHeight() / 2);
+
+                var distance = Math.sqrt(Math.pow(mouseX - elementX, 2) + Math.pow(mouseY - elementY, 2));
+
+                if (distance < shortestDistance) {
+                    shortestDistance = distance;
+                    nearestElement = $element;
+                }
+
+            });
+
+            if (nearestElement) {
+                alert('Nearest element is: ' + nearestElement.text());
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
